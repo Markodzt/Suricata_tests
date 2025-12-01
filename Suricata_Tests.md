@@ -3,8 +3,6 @@
 
 ---
 
-## 1. Resumen del trabajo realizado
-
 ### Test 1:
  Suricata, Promtail, Loki, Grafana
 ### Test 2: 
@@ -25,6 +23,7 @@ sudo apt install -y curl wget gnupg apt-transport-https software-properties-comm
 
 ### Instalación y configuración de Suricata
 
+
 ```bash
 sudo apt install -y suricata suricata-update
 sudo suricata-update
@@ -39,8 +38,7 @@ Rutas de logs relevantes:
 /var/log/suricata/eve.json
 /var/log/suricata/suricata.log
 ```
-
----
+![Suricata_update](https://github.com/user-attachments/assets/520529c1-1d50-43c7-b8fa-19700974566d)
 
 ### Instalación y configuración de Loki
 
@@ -68,7 +66,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable loki
 sudo systemctl start loki
 ```
-
+![Status_loki](https://github.com/user-attachments/assets/a35c637f-5041-42f2-a30f-141fc1ade755)
 ---
 
 ### Instalación y configuración de Grafana
@@ -114,6 +112,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable promtail
 sudo systemctl start promtail
 ```
+![Logs](https://github.com/user-attachments/assets/e19d648b-4651-4663-a544-35c4bbaddf06)
 
 ---
 
@@ -146,6 +145,7 @@ network.host: 0.0.0.0
 discovery.type: single-node
 xpack.security.enabled: false
 ```
+![Elastic_events](https://github.com/user-attachments/assets/f9602c99-a796-4685-9bf6-fb6e92fabfcd)
 
 ---
 
@@ -223,6 +223,7 @@ Logs:
 ```
 /var/log/suricata/eve.json
 ```
+![Suricata_test](https://github.com/user-attachments/assets/38362ce8-f5f6-4525-840d-8952ce5cece6)
 
 ---
 
